@@ -2,6 +2,8 @@
 applications: 
 - name: hello-world-oracle-java
   mem: 512M
+  buildpack: java3-agent
+  path: target/hello-world-oracle-java-1.0
   services:
     ${name}-db:
       type: oracle1
